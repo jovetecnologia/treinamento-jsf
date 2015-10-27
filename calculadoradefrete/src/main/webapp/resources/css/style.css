@@ -1,7 +1,45 @@
+html {
+	height: 100%;
+}
+
 body {
-   margin: 0;
-   padding: 0;
-   background-color: #333333;
-   font-family: Helvetica, Arial, sans-serif;
-   font-size: 0.9em;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 0.9em;
+	color: #333333;
+	background-color: #F3F3F3;
+}
+
+.ajax-status {
+	position: fixed;
+	right: 33px;
+	bottom: 55px;
+	z-index: 12000;
+}
+
+#container-geral {
+	position: relative;
+	width: 100%;
+}
+
+#div-centro {
+	width: 320px;
+	height: 320px;
+	margin: 16px;
+	padding: 16px;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	background-color: #E9E9E9;
+}
+
+.label-default {
+	padding-left: 2px;
+	line-height: 1.5em;
+}
+
+.input-default {
+	width: 96%;
 }

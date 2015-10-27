@@ -4,8 +4,11 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
 	id="WebApp_ID" version="3.1">
 	<display-name>calculadoradefrete</display-name>
+	<welcome-file-list>
+		<welcome-file>index.xhtml</welcome-file>
+	</welcome-file-list>
 
-   <!-- Configuração JavaServer Faces -->
+	<!-- Configuração JavaServer Faces -->
 	<servlet>
 		<servlet-name>Faces Servlet</servlet-name>
 		<servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
@@ -34,7 +37,13 @@
 		<env-entry-type>java.lang.String</env-entry-type>
 		<env-entry-value>BUukO7YT2GhqQGOQC0kuYw==</env-entry-value>
 	</env-entry>
-	
+
+	<!-- Tema do PrimeFaces -->
+	<context-param>
+		<param-name>primefaces.THEME</param-name>
+		<param-value>bootstrap</param-value>
+	</context-param>
+
 	<!-- Configurações de client session e handlers de exceptions -->
 	<session-config>
 		<session-timeout>60</session-timeout>
