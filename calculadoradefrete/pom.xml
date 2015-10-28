@@ -43,6 +43,13 @@
 			<artifactId>bootstrap</artifactId>
 			<version>1.0.8</version>
 		</dependency>
+		<dependency>
+			<groupId>api-connection</groupId>
+			<artifactId>api-connection</artifactId>
+			<scope>system</scope>
+			<version>1.0.0</version>
+			<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/api-connection.jar</systemPath>
+		</dependency>
     </dependencies>
     
     <repositories>

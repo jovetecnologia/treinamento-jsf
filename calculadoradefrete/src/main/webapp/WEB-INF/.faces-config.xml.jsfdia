@@ -1,2 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PROCESS model-entity="JSFProcess"/>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#public#request.xhtml"
+  PATH="/public/request.xhtml" SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#public#request.xhtml:0" NAME="item"
+   PATH="/public/request.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="string_qualquer::#public#view.xhtml"
+    NAME="output" PATH="/public/view.xhtml"
+    TARGET="rules:#public#view.xhtml" TITLE="string_qualquer" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#public#view.xhtml" PATH="/public/view.xhtml"
+  SHAPE="240,33,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>

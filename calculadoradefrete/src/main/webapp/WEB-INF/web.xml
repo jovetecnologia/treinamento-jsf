@@ -48,15 +48,5 @@
 	<session-config>
 		<session-timeout>60</session-timeout>
 	</session-config>
-	<!-- Criar página de erro 404 -->
-	<error-page>
-		<error-code>404</error-code>
-		<location>/restrict/erro404.xhtml</location>
-	</error-page>
-	<!-- Criar página de erro do sistema -->
-	<error-page>
-		<exception-type>java.lang.Exception</exception-type>
-		<location>/restrict/erroSistema.xhtml</location>
-	</error-page>
 
 </web-app>

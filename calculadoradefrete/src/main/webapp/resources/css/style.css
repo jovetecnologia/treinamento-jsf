@@ -35,6 +35,11 @@ body {
 	background-color: #E9E9E9;
 }
 
+.label-titulo {
+	font-size: 1.125rem;
+	line-height: 1.5rem;
+}
+
 .label-default {
 	padding-left: 2px;
 	line-height: 1.5em;

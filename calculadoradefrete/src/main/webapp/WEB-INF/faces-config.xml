@@ -17,5 +17,13 @@
 			<default-locale>pt_BR</default-locale>
 		</locale-config>
 	</application>
+	
+	<navigation-rule>
+		<from-view-id>/public/request.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>string_qualquer</from-outcome>
+			<to-view-id>/public/view.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
 
 </faces-config>
