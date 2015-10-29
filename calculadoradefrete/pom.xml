@@ -50,6 +50,11 @@
 			<version>1.0.0</version>
 			<systemPath>${basedir}/src/main/webapp/WEB-INF/lib/api-connection.jar</systemPath>
 		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.36</version>
+		</dependency>
     </dependencies>
     
     <repositories>

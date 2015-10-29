@@ -6,7 +6,6 @@ public class Numero implements Serializable {
 	private static final long serialVersionUID = 544292131402548291L;
 	
 	private int valor;
-	
 	/**
 	 * @return the valor
 	 */

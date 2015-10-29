@@ -1,0 +1,46 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	template="/layout/layout2.xhtml">
+
+	<ui:define name="conteudo">
+		<h:form id="form">
+			<div id="div-centro">
+				<h:panelGrid id="freteGrid" width="100%" columns="2">
+					<h:outputText value="Cep de Origem" />
+					<p:inputText value="#{freteBean.frete.origem.cep}" />
+
+					<h:outputText value="Cep de Destino" />
+					<p:inputText value="#{freteBean.frete.destino.cep}" />
+
+					<h:outputText value="Peso (KG)" />
+					<p:inputText value="#{freteBean.frete.peso}"
+						converter="pesoConverter" />
+
+					<h:outputText value="Tipo do Serviço" />
+					<p:selectOneMenu id="console" value="#{freteBean.tipoServico}"
+						style="width:185px">
+						<f:selectItem itemLabel="Selecione" itemValue="0" />
+						<f:selectItem itemLabel="PAC" itemValue="1" />
+						<f:selectItem itemLabel="Sedex" itemValue="2" />
+						<f:selectItem itemLabel="Sedex 10" itemValue="3" />
+					</p:selectOneMenu>
+				</h:panelGrid>
+					
+				<h:panelGrid rendered="#{freteBean.frete.valor gt 0}" width="100%" columns="2">
+					<h:outputText value="Valor de frete" />
+					<p:inputText value="#{freteBean.frete.valor}" converter="moedaConverter" />
+				</h:panelGrid>
+
+				<h:panelGroup layout="block">
+					<p:commandButton styleClass="botao" value="Calcular"
+						actionListener="#{freteBean.calcularFrete}"
+						update=":form" />
+				</h:panelGroup>
+				<p:growl id="mensagens" closable="true" />
+			</div>
+		</h:form>
+	</ui:define>
+</ui:composition>
